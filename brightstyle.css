@@ -1,0 +1,32 @@
+body {
+    background-image: linear-gradient(#dabeba, #ffe5de);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ffe5de;
+    color: #505c68;
+    /*font-family: 'Patrick Hand', cursive;*/
+    font-family: 'Special Elite';
+}
+
+#greeting {
+    font-size: 10em;
+    margin: 20px;
+
+    display: flex;
+}
+
+#datetime {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dt {
+
+    font-size: 6em;
+    background-color: #9bafc7;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+}

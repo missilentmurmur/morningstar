@@ -9,24 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div id="greeting">Jó reggelt, Andi!</div>
-    <div id="datetime">
-        <div class="dt">{{date}}</div>
-        <div class="dt">{{time}}</div>
+    <div id="canvas">
+        <div id="greeting">Jó reggelt, Andi!</div>
+        <div id="datetime">
+            <div class="dt">{{date}}</div>
+            <div class="dt">{{time}}</div>
+        </div>
+        <div id="sleep">Hogy aludtál?</div>
+        <div id="comics"><p>Jöhetnek a képregények?</p>
+            <div id="comic1">Dumbing of Age</div>
+            <div id="comic2">Questionable Content</div>
+        </div>
+        <script>
+            var app2 = new Vue({
+                el: '#datetime',
+                data: {
+                    date: new Date().toLocaleDateString('hu-HU', { month: 'short', day: '2-digit' }),
+                    time: new Date().toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit' })
+                }
+                })
+        </script>
     </div>
-    <div id="sleep">Hogy aludtál?</div>
-    <div id="comics"><p>Jöhetnek a képregények?</p>
-        <div id="comic1">Dumbing of Age</div>
-        <div id="comic2">Questionable Content</div>
-    </div>
-    <script>
-        var app2 = new Vue({
-            el: '#datetime',
-            data: {
-                date: new Date().toLocaleDateString('hu-HU', { month: 'short', day: '2-digit' }),
-                time: new Date().toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit' })
-            }
-            })
-    </script>
 </body>
 </html>
